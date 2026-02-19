@@ -1,0 +1,8 @@
+com\supcom\projetuniversitaire\controller\ProjetController.class
+com\supcom\projetuniversitaire\repository\ProjetRepository.class
+com\supcom\projetuniversitaire\model\Tache.class
+com\supcom\projetuniversitaire\ProjetUniversitaireApplication.class
+com\supcom\projetuniversitaire\service\ProjetService.class
+com\supcom\projetuniversitaire\exception\GlobalExceptionHandler.class
+com\supcom\projetuniversitaire\exception\ResourceNotFoundException.class
+com\supcom\projetuniversitaire\model\Projet.class
