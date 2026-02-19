@@ -1,0 +1,24 @@
+{
+  "name": "projet-universitaire",
+  "type": "javascript",
+  "main": "dist/projet-universitaire-frontend/browser/index.html",
+  "compatibility_date": "2026-02-19",
+  "build": {
+    "command": "npm run build",
+    "cwd": "."
+  },
+  "env": {
+    "production": {
+      "routes": [
+        {
+          "pattern": "*.js",
+          "zone_name": "example.com"
+        },
+        {
+          "pattern": "*.css",
+          "zone_name": "example.com"
+        }
+      ]
+    }
+  }
+}
