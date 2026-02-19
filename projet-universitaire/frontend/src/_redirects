@@ -1,0 +1,5 @@
+# Cloudflare Pages - Redirects Configuration
+# This file ensures Angular routing works correctly
+
+# Redirect all routes to index.html for client-side routing
+/*    /index.html   200

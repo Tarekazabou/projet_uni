@@ -197,3 +197,28 @@ Par rapport aux outils existants (Trello, Asana, Notion) :
   "statut": "EN_COURS"
 }
 ```
+
+---
+
+## 🚀 Déploiement en Production
+
+Pour déployer cette application sur le cloud :
+
+📖 **[Guide de Déploiement Complet](DEPLOYMENT.md)**
+
+✅ **[Checklist de Déploiement](DEPLOYMENT_CHECKLIST.md)**
+
+### Architecture de Déploiement Recommandée :
+
+- **Frontend** : Cloudflare Pages (gratuit, CDN global)
+- **Backend** : Railway.app (gratuit avec limitations)
+- **Database** : MongoDB Atlas (gratuit jusqu'à 512 MB)
+
+Consultez le fichier [DEPLOYMENT.md](DEPLOYMENT.md) pour les instructions détaillées pas à pas.
+
+---
+
+## 📄 Licence
+
+Projet académique - SUP'COM 2025-2026
+

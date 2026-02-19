@@ -5,7 +5,7 @@
  * Service Angular pour communiquer avec l'API REST Spring Boot.
  * Utilise HttpClient pour envoyer des requêtes HTTP (GET, POST, PUT, DELETE).
  *
- * URL de base de l'API : http://localhost:8080/api/projets
+ * URL de base configurée via environment.ts (local) ou environment.prod.ts (production)
  *
  * Ce service est injecté dans les composants Angular qui ont
  * besoin d'accéder aux données des projets.
@@ -16,14 +16,15 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Projet } from '../models/projet.model';
 import { Tache } from '../models/tache.model';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root' // Service disponible globalement dans toute l'application
 })
 export class ProjetService {
 
-  /** URL de base de l'API backend Spring Boot */
-  private apiUrl = 'http://localhost:8080/api/projets';
+  /** URL de base de l'API backend Spring Boot (depuis environment) */
+  private apiUrl = environment.apiUrl;
 
   /** Injection du client HTTP Angular */
   private http = inject(HttpClient);

@@ -19,7 +19,7 @@ import java.util.HashMap;
  * ============================================================
  * Expose les APIs REST pour la gestion des projets universitaires.
  *
- * @CrossOrigin : autorise Angular (port 4200) à communiquer avec ce backend
+ * CORS configuré globalement dans WebConfig pour supporter local et production
  * @RestController : indique que cette classe est un contrôleur REST
  * @RequestMapping : préfixe de toutes les routes → /api/projets
  *
@@ -35,7 +35,6 @@ import java.util.HashMap;
  *   POST   /api/projets/{id}/membres             → ajoute un membre
  * ============================================================
  */
-@CrossOrigin(origins = "http://localhost:4200")  // Autoriser les requêtes depuis Angular
 @RestController
 @RequestMapping("/api/projets")
 public class ProjetController {
