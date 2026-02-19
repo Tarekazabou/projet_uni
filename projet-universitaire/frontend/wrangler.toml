@@ -1,5 +1,0 @@
-name = "projet-universitaire"
-compatibility_date = "2026-02-20"
-
-[site]
-bucket = "./dist/projet-universitaire-frontend/browser"
