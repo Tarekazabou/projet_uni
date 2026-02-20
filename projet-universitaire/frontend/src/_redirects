@@ -1,5 +1,5 @@
-# Cloudflare Pages - Redirects Configuration
-# This file ensures Angular routing works correctly
-
-# Redirect all routes to index.html for client-side routing
-/*    /index.html   200
+# Cloudflare - SPA Redirects Configuration
+# Serve index.html for Angular client-side routing
+# Only match paths that don't have a file extension (avoids infinite loop)
+/assets/*  /assets/:splat  200
+/*         /index.html     200!

@@ -3,6 +3,7 @@
   "compatibility_date": "2026-02-19",
 
   "assets": {
-    "directory": "./dist/projet-universitaire-frontend/browser"
+    "directory": "./dist/projet-universitaire-frontend/browser",
+    "not_found_handling": "single-page-application"
   }
 }
