@@ -23,8 +23,10 @@ public class CorsConfig implements WebMvcConfigurer {
                     "http://localhost:3000",
                     "http://localhost:4200",
                     "http://localhost:5173",
+                    "https://projetuni.tarek-azabou.workers.dev",
                     "https://projetuni-production.pages.dev",
-                    "https://*.pages.dev"
+                    "https://*.pages.dev",
+                    "https://*.workers.dev"
                 )
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH")
                 .allowedHeaders("*")
