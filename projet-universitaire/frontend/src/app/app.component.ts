@@ -24,12 +24,20 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     </main>
   `,
   styles: [`
+    :host {
+      display: block;
+      min-height: 100vh;
+      background: var(--bg-main);
+    }
     .main-content {
-      padding: 24px;
+      padding: 32px 24px;
       max-width: 1400px;
       margin: 0 auto;
-      min-height: calc(100vh - 60px);
-      background: #f4f6f8;
+      min-height: calc(100vh - 72px);
+      animation: fadeIn 0.3s ease-out;
+    }
+    @media (max-width: 768px) {
+      .main-content { padding: 16px 12px; }
     }
   `]
 })
